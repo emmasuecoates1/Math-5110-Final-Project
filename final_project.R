@@ -52,7 +52,7 @@ plot_vector_field <- function(A, title = '', ...) {
   lines(c(0, 0), c(4, -4), lwd = 1)
 }
 
-
+# Plots eigenvectors on existing vector field given matrix A
 plot_eigenvectors <- function(A, ...) {
   E <- eigen(A)$vectors * 4
   arrows(-E[1, 1], -E[2, 1], E[1, 1], E[2, 1], length = 0, lty = 2, ...)
