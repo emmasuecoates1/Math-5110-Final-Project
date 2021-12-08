@@ -4,7 +4,7 @@
 
 # Solves linear systems of differential equations given matrix 'A' and 
 #  intial conditions inits 
-solve_linear <- function(A, inits = c(1, 1), tmax = 50, n = 500) {
+solve_linear <- function(A, inits, tmax = 50, n = 500) {
   # compute eigenvectors and eigenvalues
   eig <- eigen(A)
   E <- eig$vectors
