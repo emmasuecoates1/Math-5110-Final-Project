@@ -22,7 +22,7 @@ solve_linear <- function(A, inits, tmax = 50, n = 500) {
     x[i, ] <- E %*% (C * exp(lambdas * t))
   }
   
-  # Re drops the imaginary part ... more on that later!
+  # Re drops the imaginary part 
   Re(x)
 }
 
